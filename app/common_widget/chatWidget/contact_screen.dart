@@ -6,7 +6,6 @@ import 'chatGPT.dart';
 import 'chatbot_widget.dart';
 import 'iconButtonLogin_widget.dart';
 import 'iconPushSearchConttact.dart';
-import 'search_contacts.dart';
 import 'users_widget.dart';
 
 class ContactScreen extends StatefulWidget {

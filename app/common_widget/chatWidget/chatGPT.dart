@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
 
@@ -10,10 +10,10 @@ Widget chatGPTWidget(Function(String, int) onUserSelected) {
     children: [
       ElevatedButton(
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(
+          backgroundColor: WidgetStateProperty.all(
             Colors.transparent,
           ),
-          shadowColor: MaterialStateProperty.all(
+          shadowColor: WidgetStateProperty.all(
             Colors.transparent,
           ),
         ),

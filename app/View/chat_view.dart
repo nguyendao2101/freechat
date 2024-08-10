@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_null_comparison, avoid_print
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -29,7 +31,7 @@ class _ChatState extends State<Chat> {
   FlutterSoundRecorder? _recorder;
   bool _isRecording = false;
   String? _filePath;
-  stt.SpeechToText _speechToText = stt.SpeechToText();
+  final stt.SpeechToText _speechToText = stt.SpeechToText();
   bool _isListening = false;
 
   @override
@@ -90,7 +92,7 @@ class _ChatState extends State<Chat> {
   void _startListening() async {
     print('da vao den chuyen doi ghi am thanh van ban');
     if (!_isListening) {
-      print('dao vao den _isListening');
+      print('da vao den _isListening');
       setState(() {
         _isListening = true;
       });

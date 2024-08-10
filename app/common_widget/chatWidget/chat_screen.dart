@@ -96,14 +96,15 @@ class _ChatScreenState extends State<ChatScreen> {
               controller: widget.controller,
               onSendPressed: () {
                 if (widget.controller.text.isNotEmpty) {
-                  var message = widget.controller.text.toString();
+                  var message = widget.controller.text.toString().trim();
                   setState(() {
                     messages.add({
                       'from': 'user',
                       'to': widget.user,
                       'message': message,
                     });
-                    widget.controller.text = '';
+                    // widget.controller.text = '';
+                    widget.controller.clear();
                   });
 
                   if (widget.user == 'Chat Bot') {

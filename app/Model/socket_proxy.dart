@@ -1,4 +1,4 @@
-// ignore_for_file: constant_identifier_names, unused_field, unnecessary_null_comparison, non_constant_identifier_names, no_leading_underscores_for_local_identifiers, unused_element
+// ignore_for_file: constant_identifier_names, unused_field, unnecessary_null_comparison, non_constant_identifier_names, no_leading_underscores_for_local_identifiers, unused_element, unnecessary_brace_in_string_interps, avoid_print
 
 import 'package:ezyfox_server_flutter_client/ezy_client.dart';
 import 'package:ezyfox_server_flutter_client/ezy_clients.dart';
@@ -85,8 +85,10 @@ class SocketProxy {
     }
     this.username = username;
     this.password = password;
-    _client.connect("10.0.2.2",
-        3005); // Android emulator localhost-10.0.2.2 for ios it may be 127.0.0.1
+    // _client.connect("10.0.2.2",
+    //     3005); // Android emulator localhost-10.0.2.2 for ios it may be 127.0.0.1
+    _client.connect(
+        "192.168.31.86", 3005); // computer is server and use your real phone
   }
 
   void disconnect() {
