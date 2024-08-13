@@ -3,7 +3,6 @@ import 'chat.dart';
 import 'package:flutter/services.dart';
 
 import 'globals.dart';
-import 'test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,6 +60,13 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                const Text(
+                  'Login',
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
                 TextField(
                   controller: username,
                   textAlign: TextAlign.center,
