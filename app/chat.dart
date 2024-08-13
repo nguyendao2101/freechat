@@ -55,11 +55,7 @@ class _ChatState extends State<Chat> {
     setup();
     connect();
     super.initState();
-
   }
-
-
-
 
   @override
   Widget build(BuildContext context) {
