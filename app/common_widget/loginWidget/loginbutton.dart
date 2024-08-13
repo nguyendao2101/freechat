@@ -11,13 +11,13 @@ class LoginButton extends StatelessWidget {
   final VoidCallback onInvalidCredentials;
 
   const LoginButton({
-    Key? key,
+    super.key,
     required this.loginController,
     required this.context,
     required this.usernameController,
     required this.passwordController,
     required this.onInvalidCredentials,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

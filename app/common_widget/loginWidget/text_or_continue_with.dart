@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class OrContinueWith extends StatelessWidget {
+  const OrContinueWith({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(

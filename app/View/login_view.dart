@@ -83,11 +83,11 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Logo _logoAppleAndGoogle() {
-    return Logo();
+    return const Logo();
   }
 
   OrContinueWith _textOrContinueWith() {
-    return OrContinueWith();
+    return const OrContinueWith();
   }
 
   //form input fields for username and password

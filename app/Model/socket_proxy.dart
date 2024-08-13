@@ -1,4 +1,4 @@
-// ignore_for_file: constant_identifier_names, unused_field, unnecessary_null_comparison, non_constant_identifier_names, no_leading_underscores_for_local_identifiers, unused_element
+// ignore_for_file: constant_identifier_names, unused_field, unnecessary_null_comparison, non_constant_identifier_names, no_leading_underscores_for_local_identifiers, unused_element, unnecessary_brace_in_string_interps, avoid_print
 
 import 'package:ezyfox_server_flutter_client/ezy_client.dart';
 import 'package:ezyfox_server_flutter_client/ezy_clients.dart';

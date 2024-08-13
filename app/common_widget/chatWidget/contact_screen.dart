@@ -6,7 +6,6 @@ import 'chatGPT.dart';
 import 'chatbot_widget.dart';
 import 'iconButtonLogin_widget.dart';
 import 'iconPushSearchConttact.dart';
-import 'search_contacts.dart';
 import 'users_widget.dart';
 
 class ContactScreen extends StatefulWidget {
@@ -28,9 +27,20 @@ class _ContactScreenState extends State<ContactScreen> {
     return Scaffold(
       backgroundColor: TColor.bg,
       appBar: AppBar(
-        title: const Text(
-          "Contacts",
-          style: TextStyle(color: Colors.white),
+        title: const Row(
+          children: [
+            Text(
+              "Contacts",
+              style: TextStyle(color: Colors.white),
+            ),
+            SizedBox(
+              width: 20,
+            ),
+            Text(
+              'Screen',
+              style: TextStyle(fontSize: 30, color: Colors.white),
+            )
+          ],
         ),
         automaticallyImplyLeading: false,
         backgroundColor: TColor.bg,
